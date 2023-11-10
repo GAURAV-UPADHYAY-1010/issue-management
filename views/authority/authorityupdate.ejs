@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2670b2;
+        }
+
+        .view-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Share Your update</h1>
+    </header>
+    <div class="container">
+        <form>
+            <input type="text" placeholder="Title" required>
+            <textarea placeholder="Description" required></textarea>
+            <input type="file" accept="image/*, video/*">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="notes">
+        <p>You can <img src="https://www.weareteachers.com/wp-content/uploads/10-19-800x800.jpg" alt="Text" width="40" height="40"> tweet here, <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUsrAGvkCd_t5475FRx7tgp2g9HzfAsFkjsA&usqp=CAU" alt="Image" width="40" height="40"> upload photos, and <img src="https://mir-s3-cdn-cf.behance.net/projects/404/64fb0d179128007.Y3JvcCwxMzgwLDEwODAsMTAsMA.png" alt="Video" width="40" height="40"> upload videos.</p>
+    </div>
+    <div class="view-button">
+        <a href="authority_update_page.html">
+            <button>View Your Contribution</button>
+        </a>
+    </div>
+    <div class="view-button">
+        <a href="logout.html">
+            <button>Logout</button>
+        </a>
+    </div>
+</body>
+</html>

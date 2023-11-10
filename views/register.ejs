@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<head>
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 90%; /* Set a specific width for the input fields and select element */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center; /* Center-align the text in input fields */
+        }
+
+        input[type="submit"] {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        .error-message {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registeration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <span class="error-message" id="username-error"></span><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error-message" id="email-error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error-message" id="password-error"></span><br><br>
+
+        <label for="user-type">User Type:</label>
+        <select id="user-type" name="userType" required>
+            <option value="faculty">Faculty</option>
+            <option value="student">Student</option>
+            <option value="authority">Authority</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <script src="/javascripts/register.js"></script>
+</body>
+</html>
